@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Flexbox Demo</title>
+    <link rel="stylesheet" href="./output.css"/>
+  </head>
+  <body class="bg-gray-200">
+    <h1 class="text-2xl mb-4">Tailwind CSS Flexbox Operations Demo</h1>
+
+    <!-- Row Flexbox -->
+    <section>
+      <h2 class="text-xl mb-2">Flex Direction: Row</h2>
+      <div class="flex flex-wrap space-x-4">
+        <div class="box bg-red-500">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+
+      </div>
+    </section>
+
+    <!-- Column Flexbox -->
+    <section class="mt-8">
+      <h2 class="text-xl mb-2">Flex Direction: Column</h2>
+      <div class="flex flex-col space-y-4">
+        <div class="box bg-blue-500">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+      </div>
+    </section>
+
+    <!-- Justify Content (Flexbox Horizontal Alignment) -->
+    <section class="mt-8">
+      <h2 class="text-xl mb-2">Justify Content</h2>
+      <div class="flex justify-between mb-4">
+        <div class="box bg-green-500">1</div>
+        <div class="box bg-green-500">2</div>
+        <div class="box bg-green-500">3</div>
+      </div>
+      <div class="flex justify-center space-x-4">
+        <div class="box bg-yellow-500">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+      </div>
+    </section>
+
+    <!-- Align Items (Flexbox Vertical Alignment) -->
+    <section class="mt-8">
+      <h2 class="text-xl mb-2">Align Items</h2>
+      <div class="flex items-start space-x-4 mb-4 border border-gray-500" style="height: 150px">
+        <div class="box bg-purple-500">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        
+      </div>
+      <div class="flex items-center space-x-4 border border-gray-500" style="height: 150px">
+        <div class="box bg-purple-500">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+     
+      </div>
+    </section>
+
+    <!-- Flex Wrap -->
+    <section class="mt-8">
+      <h2 class="text-xl mb-2">Flex Wrap</h2>
+      <div class="flex flex-wrap space-x-4">
+        <div class="box bg-orange-500">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">5</div>
+        <div class="box">5</div>
+        <div class="box">5</div>
+        <div class="box">5</div>
+        <div class="box">5</div>
+        <div class="box">5</div>
+        <div class="box">5</div>
+        <div class="box">5</div>
+        <div class="box">5</div>
+        <div class="box">5</div>
+        <div class="box">5</div>
+        <div class="box">5</div>
+        <div class="box">5</div>
+        <div class="box">5</div>
+
+      </div>
+    </section>
+
+    <!-- Flex Grow -->
+    <section class="mt-8">
+      <h2 class="text-xl mb-2">Flex Grow</h2>
+      <div class="flex space-x-4">
+        <div class="box flex-grow bg-pink-500">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+      </div>
+    </section>
+
+       <!-- CSS Grid -->
+    <section class="mt-8">
+      <h2 class="text-xl mb-2">Grid Layout</h2>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="box bg-teal-500">1</div>
+        <div class="box bg-teal-500">2</div>
+        <div class="box bg-teal-500">3</div>
+        <div class="box bg-teal-500">4</div>
+        <div class="box bg-teal-500">5</div>
+        <div class="box bg-teal-500">6</div>
+        <div class="box bg-teal-500">6</div>
+        <div class="box bg-teal-500">6</div>
+        <div class="box bg-teal-500">6</div>
+        <div class="box bg-teal-500">6</div>
+        <div class="box bg-teal-500">6</div>
+      </div>
+    </section>
+
+   <!-- Grid with Template Rows and Columns -->
+   <section class="mt-8">
+    <h2 class="text-xl mb-2">Grid Template Columns & Rows</h2>
+    <div class="grid grid-cols-3 grid-rows-2 gap-4">
+      <div class="box bg-cyan-500 col-span-2">1 (col-span-2)</div>
+      <div class="box bg-cyan-500">2</div>
+      <div class="box bg-cyan-500 row-span-2">3 (row-span-2)</div>
+      <div class="box bg-cyan-500">4</div>
+      <div class="box bg-cyan-500">5</div>
+      <div class="box bg-cyan-500">5</div>
+      <div class="box bg-cyan-500">5</div>
+      <div class="box bg-cyan-500">5</div>
+      <div class="box bg-cyan-500">5</div>
+      <div class="box bg-cyan-500">5</div>
+      <div class="box bg-cyan-500">5</div>
+      <div class="box bg-cyan-500">5</div>
+      <div class="box bg-cyan-500">5</div>
+  </section>
+
+  <div class="min-h-[200vh] bg-[url('data:image/png;base64,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')] bg-contain bg-no-repeat bg-fixed bg-[450px_10px]">
+    <div class="flex justify-center items-center h-screen text-white">
+      <h2 class="text-4xl">First Screen Section</h2>
+    </div>
+    <div class="flex justify-center items-center h-screen text-white">
+      <h2 class="text-4xl">Second Screen Section</h2>
+    </div>
+  </div>
+
+  </body>
+</html>
